@@ -46,4 +46,5 @@ else {
 // Creates a stack
 var Stack = function(){
     this.count = 0;
+    this.storage = {};
 }
