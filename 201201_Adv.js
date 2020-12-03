@@ -48,3 +48,16 @@ function depositProfit(deposit, rate, threshold) {
 }
 const answer = depositProfit(100, 20, 170);
 console.log(answer);
+
+
+
+
+/* 
+write a function that splits an array (first argment) into groups
+the length of size (second argument) and returns them as a two dimensional array.
+chunkyMonkey(["a","b","c","d"],2) should retrun (["a", "b"],["c","d"])
+chunkyMonkey([0,1,2,3,4,5], 4) should return [[0,1,2,3],[4,5]]
+
+Hints 
+slice()
+*/
