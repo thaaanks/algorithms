@@ -1,0 +1,18 @@
+.diceContainer {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  color: balck;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dice {
+  font-size: 25px;
+  font: bold;
+  display: none;
+}
+
+.showing {
+  display: inline;
+}
