@@ -25,3 +25,18 @@ function adjacentElementsProduct(inputArray){
  
  adjacentElementsProduct([3, 6, -2, -5, 7, 3]);
 
+
+ // 출제자 답안
+ function adjacentElementsProduct(nums) {
+    let largestProduct = nums[0] * nums[1];
+    
+    for(let i = 1; i < nums.length - 1; i++) {
+        const adjacentProduct = nums[i] * nums[i + 1];
+        
+        if(largestProduct < adjacentProduct) {
+            largestProduct = adjacentProduct;
+        }
+    }
+    
+    return largestProduct;
+}
