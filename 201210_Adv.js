@@ -10,7 +10,7 @@ the output should be adjacentElementsProduct(inputArray) = 21.
 */
 
 
-// 내 답안
+// 내 답안 
 function adjacentElementsProduct(inputArray){
     let pairProductsArray = [];
      for(i=1; i < inputArray.length ; i++){
