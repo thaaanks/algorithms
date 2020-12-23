@@ -19,21 +19,27 @@ split()
 
 // 내 답안
 function vaildTime(time){
-    const splitArray = time.split(:);
+    const splitArray = time.split(':');
     console.log(splitArray);
-    const answer = true;
-    if (splitArray[0] <= 24 || splitArray[1]  <= 59){
-        console.log(answer);
-        return answer = true;
+    let answer = 0;
+    let one = parseInt(splitArray[0]);
+    let two = parseInt(splitArray[1]);
+    if (one <= 23 & two <= 59){      
+        answer = true;
     } else {
-        console.log(answer);
-        return answer = false;
+        answer = false;
     }
+    return answer;
 }
-let time = "13:58"
-vaildTime(time);
-let time = "25:51"
-vaildTime(time);
-02:76
-let time = "25:51"
-vaildTime(time);
+
+let time = "13:58";
+let answer = vaildTime(time);
+console.log(answer);
+
+time = "25:51";
+answer = vaildTime(time);
+console.log(answer);
+
+time = "02:76";
+answer = vaildTime(time);
+console.log(answer);
