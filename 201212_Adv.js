@@ -43,3 +43,19 @@ console.log(answer);
 time = "02:76";
 answer = vaildTime(time);
 console.log(answer);
+
+
+// 출제자 정답
+function validTime(str) {
+    const [hours, minutes] = str.split(':'); // 이런 변수도 가능하구나.
+    
+    if(parseInt(hours) > 23 || parseInt(hours) < 0) {
+        return false;
+    }
+    
+    if(parseInt(minutes) > 59 || parseInt(minutes) < 0) {
+        return false;
+    }
+    
+    return true;
+}
