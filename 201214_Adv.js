@@ -22,3 +22,18 @@ let inputArray = [2,4,1,0];
 arrayMaximalAdjacentDifference(inputArray)
 
 
+// 출제자 답안
+function arrayMaximalAdjacentDifference(nums) {
+    let maxDifference = 0;
+    
+    for(let i = 0; i < nums.length - 1; i++) {
+        const absoluteDifference = Math.abs(nums[i] - nums[i + 1]);
+        
+        if(maxDifference < absoluteDifference) {
+            maxDifference = absoluteDifference;
+        }
+    }
+    
+    return maxDifference;
+}
+
