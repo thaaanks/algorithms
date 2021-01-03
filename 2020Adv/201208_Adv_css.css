@@ -16,3 +16,7 @@
 .showing {
   display: inline;
 }
+
+.hiding {
+  display: none;
+}

@@ -1,5 +1,5 @@
 //💥미해결!!!
-/* Day3
+* Day3
 write a function that splits an array (first argment) into groups
 the length of size (second argument) and returns them as a two dimensional array.
 chunkyMonkey(["a","b","c","d"],2) should retrun (["a", "b"],["c","d"])
@@ -10,8 +10,8 @@ slice()
 */
 
 // ⭐오늘 배운 것 ==================================
-// slice 는 배열 나누기,
-// split 은 문자열나누기
+// slice 는 배열 나누기 https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+// split 은 문자열나누기 https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/split
 // 배열을 요소로 넣고 싶을때는 push로 넣기.
 // =================================================
 

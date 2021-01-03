@@ -21,13 +21,16 @@ dice on the screen the dice is expected to show one of the faces randomly.
 
 let diceContainer = document.querySelector(".diceContainer");
 let div = document.querySelector("div");
-let dice = document.querySelector(".dice");
+// console.log(div);
+let dice = document.querySelectorAll(".dice");
+console.log(dice);
 let d01 = document.querySelector(".d01");
 let d02 = document.querySelector(".d02");
 let d03 = document.querySelector(".d03");
 let d04 = document.querySelector(".d04");
 let d05 = document.querySelector(".d05");
 let d06 = document.querySelector(".d06");
+
 
 let diceArray = [];
 diceArray.push(d01);
@@ -39,9 +42,11 @@ diceArray.push(d06);
 
 function showingNewDice(){
     let newNumber = Math.floor(Math.random()*6 +1);
-    // console.log(newNumber);
-    dice.classList.remove('showing');
+    console.log(newNumber);
+    dice.classList.remove("showing");
+    console.log(dice, "dice");
     let selected = diceArray[newNumber -1];
+    console.log(selected, "here");
     selected.classList.add('showing');
 }
 function init(){
