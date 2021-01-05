@@ -5,7 +5,9 @@
 >> 문제 설명
 수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다.
 
-마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때, 완주하지 못한 선수의 이름을 return 하도록 solution 함수를 작성해주세요.
+마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 
+완주한 선수들의 이름이 담긴 배열 completion이 주어질 때, 
+완주하지 못한 선수의 이름을 return 하도록 solution 함수를 작성해주세요.
 
 >> 제한사항
 마라톤 경기에 참여한 선수의 수는 1명 이상 100,000명 이하입니다.
@@ -14,10 +16,11 @@ completion의 길이는 participant의 길이보다 1 작습니다.
 참가자 중에는 동명이인이 있을 수 있습니다.
 
 >> 입출력 예
-participant	completion	return
-[leo, kiki, eden]	[eden, kiki]	leo
-[marina, josipa, nikola, vinko, filipa]	[josipa, filipa, marina, nikola]	vinko
-[mislav, stanko, mislav, ana]	[stanko, ana, mislav]	mislav
+participant                                 	completion      	                        return
+[leo, kiki, eden]	                        [eden, kiki]	                                   leo
+[marina, josipa, nikola, vinko, filipa] 	[josipa, filipa, marina, nikola]	               vinko
+[mislav, stanko, mislav, ana]	            [stanko, ana, mislav]	                           mislav
+
 >> 입출력 예 설명
 예제 #1
 leo는 참여자 명단에는 있지만, 완주자 명단에는 없기 때문에 완주하지 못했습니다.
@@ -28,12 +31,14 @@ vinko는 참여자 명단에는 있지만, 완주자 명단에는 없기 때문�
 예제 #3
 mislav는 참여자 명단에는 두 명이 있지만, 완주자 명단에는 한 명밖에 없기 때문에 한명은 완주하지 못했습니다.
 
+// 나중에 https://hianna.tistory.com/403 참고해보자
 
 function solution(participant, completion) {
     let participantArr = [];
     let completionArr = [];
     for (let i= 0; i<completion.length+1; i++){
-        if comletion.indexOf[i]
+        if completion[i]
+        participant.splice()
     }
     
     
@@ -184,24 +189,6 @@ solution([1,2,3,4,5]);
 
 
 
->> 문제 설명
-정수를 저장한 배열, arr 에서 가장 작은 수를 제거한 배열을 리턴하는 함수, solution을 완성해주세요. 
-단, 리턴하려는 배열이 빈 배열인 경우엔 배열에 -1을 채워 리턴하세요. 
-예를들어 arr이 [4,3,2,1]인 경우는 [4,3,2]를 리턴 하고, [10]면 [-1]을 리턴 합니다.
-
->> 제한 조건
-arr은 길이 1 이상인 배열입니다.
-인덱스 i, j에 대해 i ≠ j이면 arr[i] ≠ arr[j] 입니다.
-
->> 입출력 예
-arr	return
-[4,3,2,1]	[4,3,2]
-[10]	[-1]
-
-function solution(arr) {
-    var answer = [];
-    return answer;
-}
 
 
 
